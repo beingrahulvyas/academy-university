@@ -1,0 +1,835 @@
+/* Global */
+body {
+	font-family: Open Sans, Arial;
+	line-height: 1.2;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	margin: auto;
+	width: 85%;
+	overflow: hidden;
+	
+}
+
+/*img {
+	width: 100%;
+}*/
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font-size: 16px;
+}
+
+/***********************************************************************/
+/* Header */
+header {
+	background-color: #000;
+}
+
+header li {
+	display: inline-flex;
+	padding-right: 10px; 
+}
+
+header a {
+	color: #fff;
+}
+
+/***********************************************************************/
+/* main-nav */
+#main-nav {
+	height: 120px;
+	background-color: #transparent;
+	position: relative;
+	z-index: 3;
+}
+
+#main-nav .shadow {
+	background-color: #000;
+	opacity: 0.4;
+	width: 100%;
+	height: 60px;
+}
+
+#main-nav .container {
+	position: relative;
+	top: -60px;
+}
+
+#main-nav .logo {
+	width: auto;
+	display: inline;
+}
+
+#main-nav img {
+	width: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#main-nav li {
+	display: inline;
+	padding-left: 10px;
+}
+
+#main-nav .menu {
+	display: none;
+	float: right;
+}
+
+#main-nav nav {
+	width: auto;
+	float: right;
+}
+
+#main-nav nav ul {
+	float: right;
+}
+
+#main-nav a {
+	color: #fff;
+}
+
+#main-nav li.current a, #main-nav a:hover {
+	color: #56a79a;
+	border-bottom: 3px solid #56a79a;
+	padding-bottom: 3px;
+}
+
+/**************************************************************************************/
+/* main visual */
+#main-visual {
+	background-image: url('../Common/img/main_visual_image.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 680px;
+	position: relative;
+	top: -120px;
+	z-index: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+#main-visual .shadow {
+	background-color: #000;
+	opacity: 0.3;
+	height: 680px;
+	overflow: hidden;
+}
+
+#main-visual .container {
+	position: relative;
+	top: -680px;
+	overflow: hidden;
+}
+
+#main-visual h4 {
+	color: #56a79a;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 150px;
+}
+
+#main-visual h1 {
+	font-size: 48px;
+	color: white;
+	text-transform: uppercase;
+}
+
+#main-visual p {
+	color: white;
+	width: 50%;
+}
+
+#main-visual button {
+	background-color: #56a79a;
+	border: none;
+	color: white;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 17px;
+	font-weight: bold;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+#main-visual button:hover {
+	color: green;
+
+}
+
+/***********************************************************************************/
+/* Programmes */
+#programmes {
+	padding-bottom: 65px;
+	margin-top: 0;
+}
+
+#programmes h1 {
+	font-size: 36px;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 45px;
+}
+
+#programmes .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px;
+	padding-top: 0;
+}
+
+#programmes .ug_container, #programmes .pg_container {
+	width: 45%;
+	box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+	margin-bottom: 30px;
+}
+
+#programmes .ug_container div, #programmes .pg_container div {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#programmes h3 {
+	color: #56a79a;
+	font-size: 23px;
+}
+
+#programmes a {
+	color: #56a79a;
+	float: right;
+	font-size: 13px;
+	font-weight: 500;
+	border-bottom: 2px solid #56a79a;
+	margin-bottom: 30px;
+}
+
+#programmes a:hover {
+	color: green;
+	border-color: green;
+}
+
+#programmes img {
+	width: 100%;
+}
+
+/**************************************************************************************/
+/* About Us */
+#about {
+	background-color: black;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	color: white;
+}
+
+#about article {
+	float: left;
+	width: 45%;
+}
+
+#about img {
+	width: 45%;
+	float: right;
+	margin-top: 0;
+}
+
+#about h1 {
+	font-size: 36px;
+	margin-top: 0;
+}
+
+#about article div div h2{
+	color: #56a79a;
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#about article div div p {
+	margin-top: 0;
+}
+
+#about article div div h2 span {
+	font-size: 24px;
+}
+
+#about article div div:nth-child(odd), #about article div div:nth-child(even){
+	float: left;
+	width: 50%;
+}
+
+/**************************************************************************************/
+/* Events */
+#events {
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+
+#events h1 {
+	font-size: 36px;
+	width: 100%;
+	margin-top: 0;
+}
+
+#events .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+#events .first_container, #events .second_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 48%;
+	box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+	margin-bottom: 30px;
+}
+
+#events .first_container div, #events .second_container div {
+	width: 50%;
+}
+
+#events h4 {
+	color: #56a79a;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+#events a {
+	color: #56a79a;
+	float: right;
+	font-size: 13px;
+	font-weight: 500;
+	border-bottom: 2px solid #56a79a;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#events a:hover {
+	color: green;
+	border-color: green;
+}
+
+#events p.date {
+	font-size: 13px;
+	font-weight: lighter;
+	margin-top: 18px;
+	margin-bottom: 0;
+}
+
+#events p {
+	margin-top: 12px;
+	margin-bottom: 0;
+}
+
+#events .first_container .first, #events .second_container .second {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0;
+}
+
+#events img {
+	height: 100%;
+	width: 100%;
+}
+
+/*****************************************************************************/
+/* Admission*/
+#admission {
+	background-color: #000;
+	color: #fff;
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+
+#admission h1 {
+	text-align: center;
+	font-size: 36px;
+	margin-top: 0;
+	margin-bottom: 45px;
+}
+
+#admission h3 {
+	font-size: 24px;
+	color: #56a79a;
+	margin-top: 0;
+}
+
+#admission p {
+	font-size: 23px;
+	font-weight: 100;
+}
+
+#admission .main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#admission .dialog, #admission .edit_text {
+	width: 45%;
+	margin-top: 0;
+}
+
+#admission form div {
+	border: #fff solid 1px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+}
+
+#admission form label {
+	font-size: 23px;
+	padding: 10px;
+	width: 25%;
+	border-right: #fff solid 1px;
+	border-left: #56a79a solid 8px;
+	text-align: center;
+}
+
+#admission form input {
+	background-color: transparent;
+	border: none;
+	width: 75%;
+	padding: 10px;
+	font-size: 20px;
+	color: white;
+}
+
+#admission form button {
+	margin-top: 30px;
+	background-color: #56a79a;
+	color: #fff;
+	border: none;
+	float: right;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	cursor: pointer;
+}
+
+#admission form button:hover {
+	color: green;
+}
+
+/****************************************************************************/
+/* News */
+#news,
+#research {
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+
+#news h1,
+#research h1 {
+	font-size: 36px;
+	margin-top: 0;
+	margin-bottom: 45px;
+}
+
+#news h4,
+#research h4 {
+	color: #56a79a;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 35px;
+}
+
+#news .main,
+#research .main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+#news .main .first, #news .main .second, #news .main .third,
+#research .main .first, #research .main .second, #research .main .third {
+	width: 30%;
+	box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+	margin-bottom: 30px;
+}
+
+#news .main .first div, #news .main .second div, #news .main .third div,
+#research .main .first div, #research .main .second div, #research .main .third div {
+	padding-left: 15px;
+	padding-right: 26px;
+}
+
+#news img,
+#research img {
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+#news p,
+#research p {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+#news .date,
+#research .date {
+	margin-top: 0;
+	font-size: 15px;
+	font-weight: lighter;
+	margin-left: 0;
+}
+
+#news a, 
+#research a {
+	color: #56a79a;
+	float: right;
+	font-size: 13px;
+	font-weight: 500;
+	border-bottom: 2px solid #56a79a;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+#news a:hover, #research a:hover {
+	color: green;
+	border-color: green;
+}
+
+/****************************************************************************/
+/* Research */
+#research {
+	background-color: #000;
+}
+
+#research h1 {
+	color: #fff;
+}
+
+#research .main .first, #research .main .second, #research .main .third {
+	background-color: #fff;
+}
+
+
+/****************************************************************************/
+/* Contact Us */
+#contact {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+#contact h3 {
+	font-size: 30px;
+	margin-top: 0;
+	font-weight: bold;
+}
+
+#contact p {
+	color: grey;
+	line-height: 1.8em;
+}
+
+#contact .container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#contact .container .first, #contact .container .second {
+	width: 35%;
+}
+
+#contact .container .third {
+	width: 20%;
+}
+
+#contact .container .icons {
+	margin: 0;
+}
+
+#contact ul {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+	padding-left: 0;
+	align-items: center;
+}
+
+#contact ul li {
+	width: 30%;
+	list-style: none;
+	margin-left: 5px;
+	/*cursor: pointer;*/
+}
+
+#contact ul li:nth-child(2) {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#contact ul li i {
+	font-size: 30px;	
+	cursor: pointer;
+}
+
+#contact ul li i:hover {
+	color: grey;
+}
+
+
+/****************************************************************************/
+/* footer */
+#footer {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+}
+
+/****************************************************************************/
+/* media quries */
+@media(max-width: 768px){
+	#main-nav nav {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	#main-nav .logo {
+		display: flex;
+		justify-content: center;
+	}
+
+	#main-nav .logo {
+		float: left;
+	}
+
+	#main-nav nav {
+		display: none;
+	}
+
+	#main-nav .menu {
+		display: block;
+		color: white;
+		font-size: 30px;
+		margin-top: 9px;
+	}
+
+	#main-visual {
+		text-align: center;
+	}
+
+	#main-visual p {
+		width: 100%;
+	}
+
+	#programmes .container {
+		flex-direction: column;
+	}
+
+	#programmes .ug_container, #programmes .pg_container, #programmes h1 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#about .container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#about h1, #about img, #about article {
+		width: 100%;
+		text-align: center;
+	}
+
+	#about .about_content_container {
+		text-align: left;
+	}
+
+	#events .container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#events .first_container, #events .second_container {
+		width: 100%;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	#events .first_container div, #events .second_container div {
+		width: 100%;
+	}
+
+	#events .first_container .first, #events .second_container .second {
+		width: 96%;
+	}
+
+	#events a {
+		margin-right: 10px;
+	}
+
+	#admission .main {
+		flex-direction: column;
+	}
+
+	#admission .dialog,#admission .edit_text {
+		width: 100%;
+		text-align: center;
+	}
+
+	#admission form button {
+		float: none;
+	}
+
+	#admission form label {
+		width: 30%;
+	}
+
+	#admission form input {
+		width: 70%;
+	}
+
+	#news .main,#research .main {
+		flex-direction: column;
+	}
+
+	#news .main .first, #news .main .second, #news .main .third,
+	#research .main .first, #research .main .second, #research .main .third {
+		width: 100%;
+		text-align: center;
+	}
+
+	#news h1, #research h1 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#contact .container {
+		flex-direction: column;
+	}
+
+	#contact .container .first, #contact .container .second, #contact .container .third {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	#contact .container .icons {
+		width: 50%;
+		text-align: center;
+		justify-content: space-between;
+		margin: auto;
+	}
+
+	#contact ul li {
+		width: 30%;
+	}
+
+	#contact ul li i {
+		font-size: 30px;	
+	} 
+
+}
+
+
+
+@media(max-width: 540px){
+	#main-visual h1 {
+		font-size: 20pt;
+	}
+
+	#main-visual h4 {
+		font-size: 12pt;
+	}
+
+	#main-visual p {
+		font-size: 13pt;
+	}
+
+	#main-visual button {
+		font-size: 12pt;
+	}
+
+	header .container nav {
+		display: none;
+	}
+
+	#programmes h1, #about h1, #events h1, #admission h1, #news h1, #research h1 {
+		font-size: 17pt;
+		margin-bottom: 30px;
+	}
+
+	#programmes h3, #about h3, #events h3, #news h3, #research h3{
+		font-size: 13pt;
+		color: #56a79a;
+	}
+
+	.date {
+		font-size: 12pt;
+		color: grey;
+	}
+
+	#programmes p, #about p, #events p, #news p, #research p, #admission p {
+		font-size: 12pt;
+	}
+
+	#admission p {
+		font-size: 20px;
+	}
+
+	#admission form label {
+		font-size: 18px;
+		width: 30%;
+	}
+
+	#admission form input {
+		font-size: 18px;
+		width: 70%;
+	}
+
+	#contact {
+		padding-bottom: 0;
+	}
+
+	#research, #news, #admission, #events, #programmes {
+		padding-bottom: 20px;
+		padding-top: 40px;
+	}
+
+	#programmes {
+		padding-top: 0;
+	}
+
+	#about , #events{
+		padding-top: 30px;
+	}
+
+	#admission {
+		padding-bottom: 50px;
+	}
+
+	#about {
+		padding-bottom: 40px;
+	}
+
+	#contact p {
+		line-height: 1.8em;
+	}
+
+}
+
