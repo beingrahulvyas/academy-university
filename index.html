@@ -9,6 +9,11 @@
 	<title>Academy University | Home</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous">
+  	</script>
 </head>
 <body>
 	<header>
@@ -27,21 +32,23 @@
 	<div id="main-nav">
 		<div class="shadow"></div>
 		<div class="container">
-			<div class="logo">
-				<img src="Common/img/logo.png" alt="Academy University">
+			<div class="mobile" id="javaA">
+				<div class="logo">
+					<img src="Common/img/logo.png" alt="Academy University">
+				</div>
+				<div class="menu" id="javaB">
+					<span><i class="fas fa-bars"></i></span>
+				</div>
 			</div>
-			<nav>
+			<nav class="nav" id="javaC">
 				<ul>
 					<li class="current"><a href="index.html">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#programmes">Programmes</a></li>
-					<li><a href="#admission">Admission</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li class=""><a href="#about">About</a></li>
+					<li class=""><a href="#programmes">Programmes</a></li>
+					<li class=""><a href="#admission">Admission</a></li>
+					<li class=""><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<div class="menu">
-				<span><i class="fas fa-bars"></i></span>
-			</div>
 		</div>
 	</div>
 
@@ -76,7 +83,7 @@
 			<div class="pg_container">
 				<img src="./Common/img/pg_image.jpg">
 				<div>
-					<h3>Under Graduation</h3>
+					<h3>Post Graduation</h3>
 					<p>
 						Project Tango is a device which tracks the 3D motion of the device,  and creates a 3D model of the environment
 					</p>
@@ -300,5 +307,8 @@
 			<p>Copyright &copy;2018 All rights reserved</p>
 		</div>
 	</footer>
+
+	<script type="text/javascript" src="./script/script.js"></script>
+
 </body>
 </html>
