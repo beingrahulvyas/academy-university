@@ -40,6 +40,10 @@ header a {
 	color: #fff;
 }
 
+header .container ul {
+	padding-left: 0;
+}
+
 /***********************************************************************/
 /* main-nav */
 #main-nav {
