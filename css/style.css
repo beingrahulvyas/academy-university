@@ -164,7 +164,7 @@ header .container ul {
 }
 
 #main-visual button:hover {
-	background-color: #56a79a;
+	background-color: #3e8e81;
 }
 
 /***********************************************************************************/
@@ -215,8 +215,8 @@ header .container ul {
 }
 
 #programmes a:hover {
-	color: green;
-	border-color: green;
+	color: #3e8e81;
+	border-color: #3e8e81;
 }
 
 #programmes img {
@@ -319,8 +319,8 @@ header .container ul {
 }
 
 #events a:hover {
-	color: green;
-	border-color: green;
+	color: #3e8e81;
+	border-color: #3e8e81;
 }
 
 #events p.date {
@@ -424,7 +424,7 @@ header .container ul {
 }
 
 #admission form button:hover {
-	color: green;
+	background-color: #3e8e81;
 }
 
 /****************************************************************************/
@@ -505,8 +505,8 @@ header .container ul {
 }
 
 #news a:hover, #research a:hover {
-	color: green;
-	border-color: green;
+	color: #3e8e81;
+	border-color: #3e8e81;
 }
 
 /****************************************************************************/
